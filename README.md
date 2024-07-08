@@ -39,7 +39,7 @@ chardet=3.0.4
 coverage=5.5
 cryptography=3.4.6
 ```
-# Run example
+# How to run
 The pSAM is a easy-to-use command-line package.The model could be run by the following command:
 ```
 cd path_to_pSAM
@@ -48,5 +48,12 @@ python predict.py input_fasta_file output_path
 ```
 Two parameters are needed: `input_fasta_file` is a common fasta file with protein name started with '>' and protein sequence; `output_path` is the path to work and write and results. The `inputFile.fasta` in the fold is an example.
 
-# Output
-The output file containing the probabilities of subcellular location.
+# Example of input file and output result
+The `example_output` fold containing the examples of input file and output results: the `inputFile.fasta` is an example of fasta file pf input; the `merged.data.txt` is the merged output results; the `runInfo.txt` file records the running information.
+# Example running code
+'''
+cd path_to_pSAM
+conda activate dl37
+python predict.py example_output/inputFile.fasta example_output/
+'''
+
