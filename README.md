@@ -51,9 +51,9 @@ Two parameters are needed: `input_fasta_file` is a common fasta file with protei
 # Example of input file and output result
 The `example_output` fold containing the examples of input file and output results: the `inputFile.fasta` is an example of fasta file pf input; the `merged.data.txt` is the merged output results; the `runInfo.txt` file records the running information.
 # Example running code
-'''
+```
 cd path_to_pSAM
 conda activate dl37
 python predict.py example_output/inputFile.fasta example_output/
-'''
+```
 
