@@ -46,7 +46,7 @@ cd path_to_pSAM
 conda activate dl37
 python predict.py input_fasta_file output_path
 ```
-Two parameters are needed: `input_fasta_file` is a common fasta file with protein name started with '>' and protein sequence; `output_path` is the path to work and write and results.
+Two parameters are needed: `input_fasta_file` is a common fasta file with protein name started with '>' and protein sequence; `output_path` is the path to work and write and results. The `inputFile.fasta` in the fold is an example.
 
 # Output
 The output file containing the probabilities of subcellular location.
