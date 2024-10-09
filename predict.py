@@ -20,15 +20,12 @@ from tensorflow.keras.layers import Conv1D, Concatenate, MaxPooling1D, BatchNorm
 from tensorflow.keras.models import Model
 from tensorflow.keras.models import load_model, Sequential, model_from_json
 
-##please modify this path before run
-path_of_pSAM="/home/zhengyq/data/program/pSAM"
-
 ##load parameter and 
 inputfasta=sys.argv[1]
 taskDir = sys.argv[2]
 cuthigh, cutmed, cutlow = 0.736568511, 0.475949377, 0.327701151
 model1 = model_from_json(open(path_of_pSAM+'/model.alldata.json').read())
-model1.load_weights(path_of_pSAM+'/model.alldata.h5')
+model1.load_weights('./model.alldata.h5')
 
 def readFa(fa):
 	with open(fa,'r') as FA:
@@ -361,7 +358,7 @@ def list2regions(allpos, allval):
 
 
 out = open(taskDir+"/merged.data.txt", "w")
-fastafile = readFa(taskDir+"/inputFile.fasta")
+fastafile = readFa(inputfasta)
 for line in fastafile:
 	data = list(line)
 	if len(data[1]) < max_len:
