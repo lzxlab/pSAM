@@ -4,8 +4,8 @@ Many shuttling proteins transport between different subcellular locations in res
 # Install and use
 pSAM could be installed from GitHub. [conda](https://anaconda.org/anaconda/conda) is required to easily install the package. A webserver version of this model could be accessed from http://inuloc.omicsbio.info/.
 ```
-git clone https://github.com/zhengyq1/pSAMmodel
-cd pSAMmodel
+git clone https://github.com/lzxlab/pSAM
+cd pSAM
 conda env create -f environment.yaml
 ```
 # System requirements
