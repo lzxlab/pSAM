@@ -8,7 +8,6 @@ git clone https://github.com/zhengyq1/pSAMmodel
 cd pSAMmodel
 conda env create -f environment.yaml
 ```
-Once the pakackage was downloded, the users should modify and write the `path to pSAM` to `predict.py` script.
 # System requirements
 **Hardware requirements:** `pSAM` package requires a standard computer with enough RAM and with/without GPU.<br>
 **Software requirements:** This package is supported for macOS and Linux. The package has been tested on the following systems: CentOS (el8) and macOS (10.14.1).<br>
